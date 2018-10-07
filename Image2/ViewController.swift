@@ -8,10 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet private weak var scrollView: UIScrollView! {
         didSet {
+            scrollView.minimumZoomScale = 1/25
+            scrollView.maximumZoomScale = 1.0
+            scrollView.delegate = self
             scrollView.addSubview(imageView)
         }
     }
@@ -47,6 +50,10 @@ class ViewController: UIViewController {
         if imageURL == nil {
             imageURL = SampleURL.golfURL
         }
+    }
+
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
     }
 
     private func fetchImage() {
