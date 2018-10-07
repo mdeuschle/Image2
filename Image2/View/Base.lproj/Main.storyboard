@@ -86,18 +86,25 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2so-2c-EMb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cL3-gS-bNu">
+                                <rect key="frame" x="169" y="414.66666666666669" width="37" height="37"/>
+                                <color key="color" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2so-2c-EMb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E3b-kY-ojc"/>
                             <constraint firstItem="2so-2c-EMb" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="f9x-SS-IjK"/>
                             <constraint firstItem="2so-2c-EMb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="llw-MN-jio"/>
+                            <constraint firstItem="cL3-gS-bNu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pTG-P1-u5Z"/>
                             <constraint firstItem="2so-2c-EMb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="uGS-93-aHJ"/>
+                            <constraint firstItem="cL3-gS-bNu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yEM-Zi-QP4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="2so-2c-EMb" id="aZe-ng-1pL"/>
+                        <outlet property="spinner" destination="cL3-gS-bNu" id="ypF-9I-RS7"/>
                     </connections>
                 </viewController>
             </objects>

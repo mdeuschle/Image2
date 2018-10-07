@@ -18,12 +18,26 @@ class CassiniViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             if let url = SampleURL.NASA[identifier] {
-                if let destinationVC = segue.destination as? ViewController {
+                if let destinationVC = segue.destination.contents as? ViewController {
                     destinationVC.imageURL = url
                     destinationVC.title = (sender as? UIButton)?.currentTitle
                 }
             }
         }
     }
-
 }
+
+extension UIViewController {
+    var contents: UIViewController {
+        if let navigationController = self as? UINavigationController {
+            return navigationController.visibleViewController ?? self
+        } else {
+            return self
+        }
+    }
+}
+
+
+
+
+

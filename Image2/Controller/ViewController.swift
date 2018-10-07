@@ -18,6 +18,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             scrollView.addSubview(imageView)
         }
     }
+
+    @IBOutlet private weak var spinner: UIActivityIndicatorView!
+
     private var imageView = UIImageView()
 
     var imageURL: URL? {
@@ -36,6 +39,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             imageView.image = newValue
             imageView.sizeToFit()
             scrollView?.contentSize = imageView.frame.size
+            spinner?.stopAnimating()
         }
     }
 
@@ -58,6 +62,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
     private func fetchImage() {
         if let url = imageURL {
+            spinner?.startAnimating()
             DispatchQueue.global(qos: .userInitiated).async { [weak self] in
                 let data = try? Data(contentsOf: url)
                 DispatchQueue.main.async {
