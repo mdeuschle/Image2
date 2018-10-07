@@ -10,14 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var scrollView: UIScrollView! {
+        didSet {
+            scrollView.addSubview(imageView)
+        }
+    }
+    private var imageView = UIImageView()
 
     var imageURL: URL? {
         didSet {
-            imageView.image = nil
+            image = nil
             if view.window != nil {
                 fetchImage()
             }
+        }
+    }
+
+    private var image: UIImage? {
+        get {
+            return imageView.image
+        } set {
+            imageView.image = newValue
+            imageView.sizeToFit()
+            scrollView.contentSize = imageView.frame.size
         }
     }
 
@@ -38,7 +53,7 @@ class ViewController: UIViewController {
         if imageView.image == nil {
             if let url = imageURL {
                 if let data = try? Data(contentsOf: url) {
-                    imageView.image = UIImage(data: data)
+                    image = UIImage(data: data)
                 }
             }
         }

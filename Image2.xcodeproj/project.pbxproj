@@ -13,7 +13,7 @@
 		A87BD5582169928500328E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A87BD5572169928500328E61 /* Assets.xcassets */; };
 		A87BD55B2169928500328E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87BD5592169928500328E61 /* LaunchScreen.storyboard */; };
 		A87BD5632169968600328E61 /* SampleURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87BD5622169968600328E61 /* SampleURLs.swift */; };
-		A87BD565216996D000328E61 /* golf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A87BD564216996D000328E61 /* golf.jpg */; };
+		A87BD56721699C6C00328E61 /* golf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A87BD56621699C6C00328E61 /* golf.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		A87BD55A2169928500328E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A87BD55C2169928500328E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87BD5622169968600328E61 /* SampleURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleURLs.swift; sourceTree = "<group>"; };
-		A87BD564216996D000328E61 /* golf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = golf.jpg; sourceTree = "<group>"; };
+		A87BD56621699C6C00328E61 /* golf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = golf.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				A87BD5542169928300328E61 /* Main.storyboard */,
 				A87BD5572169928500328E61 /* Assets.xcassets */,
 				A87BD5592169928500328E61 /* LaunchScreen.storyboard */,
-				A87BD564216996D000328E61 /* golf.jpg */,
+				A87BD56621699C6C00328E61 /* golf.jpg */,
 				A87BD55C2169928500328E61 /* Info.plist */,
 			);
 			path = Image2;
@@ -131,7 +131,7 @@
 				A87BD55B2169928500328E61 /* LaunchScreen.storyboard in Resources */,
 				A87BD5582169928500328E61 /* Assets.xcassets in Resources */,
 				A87BD5562169928300328E61 /* Main.storyboard in Resources */,
-				A87BD565216996D000328E61 /* golf.jpg in Resources */,
+				A87BD56721699C6C00328E61 /* golf.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

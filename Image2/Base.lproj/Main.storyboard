@@ -20,17 +20,6 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2so-2c-EMb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="667" translatesAutoresizingMaskIntoConstraints="NO" id="Kba-jr-6uh">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Kba-jr-6uh" secondAttribute="trailing" id="1tg-iZ-c8k"/>
-                                    <constraint firstItem="Kba-jr-6uh" firstAttribute="top" secondItem="2so-2c-EMb" secondAttribute="top" id="M3i-ij-yKi"/>
-                                    <constraint firstItem="Kba-jr-6uh" firstAttribute="leading" secondItem="2so-2c-EMb" secondAttribute="leading" id="TqW-M4-SRx"/>
-                                    <constraint firstAttribute="bottom" secondItem="Kba-jr-6uh" secondAttribute="bottom" id="dVV-eN-Imv"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,7 +32,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="Kba-jr-6uh" id="bYZ-RU-R1x"/>
+                        <outlet property="scrollView" destination="2so-2c-EMb" id="aZe-ng-1pL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
