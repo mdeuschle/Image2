@@ -35,7 +35,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         } set {
             imageView.image = newValue
             imageView.sizeToFit()
-            scrollView.contentSize = imageView.frame.size
+            scrollView?.contentSize = imageView.frame.size
         }
     }
 
@@ -57,10 +57,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
 
     private func fetchImage() {
-        if imageView.image == nil {
-            if let url = imageURL {
-                if let data = try? Data(contentsOf: url) {
-                    image = UIImage(data: data)
+        if let url = imageURL {
+            DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+                let data = try? Data(contentsOf: url)
+                DispatchQueue.main.async {
+                    if let data = data, url == self?.imageURL {
+                        self?.image = UIImage(data: data)
+                    }
                 }
             }
         }

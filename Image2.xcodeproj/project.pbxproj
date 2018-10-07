@@ -14,6 +14,7 @@
 		A87BD55B2169928500328E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87BD5592169928500328E61 /* LaunchScreen.storyboard */; };
 		A87BD5632169968600328E61 /* SampleURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87BD5622169968600328E61 /* SampleURLs.swift */; };
 		A87BD56721699C6C00328E61 /* golf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A87BD56621699C6C00328E61 /* golf.jpg */; };
+		A87BD56C2169AA6A00328E61 /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87BD56B2169AA6A00328E61 /* CassiniViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A87BD55C2169928500328E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87BD5622169968600328E61 /* SampleURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleURLs.swift; sourceTree = "<group>"; };
 		A87BD56621699C6C00328E61 /* golf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = golf.jpg; sourceTree = "<group>"; };
+		A87BD56B2169AA6A00328E61 /* CassiniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,41 @@
 		A87BD54F2169928300328E61 /* Image2 */ = {
 			isa = PBXGroup;
 			children = (
+				A87BD56A2169AA2A00328E61 /* Model */,
+				A87BD5692169AA2500328E61 /* View */,
+				A87BD5682169AA1B00328E61 /* Controller */,
 				A87BD5502169928300328E61 /* AppDelegate.swift */,
-				A87BD5522169928300328E61 /* ViewController.swift */,
-				A87BD5622169968600328E61 /* SampleURLs.swift */,
-				A87BD5542169928300328E61 /* Main.storyboard */,
 				A87BD5572169928500328E61 /* Assets.xcassets */,
 				A87BD5592169928500328E61 /* LaunchScreen.storyboard */,
 				A87BD56621699C6C00328E61 /* golf.jpg */,
 				A87BD55C2169928500328E61 /* Info.plist */,
 			);
 			path = Image2;
+			sourceTree = "<group>";
+		};
+		A87BD5682169AA1B00328E61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A87BD5522169928300328E61 /* ViewController.swift */,
+				A87BD56B2169AA6A00328E61 /* CassiniViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A87BD5692169AA2500328E61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A87BD5542169928300328E61 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A87BD56A2169AA2A00328E61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A87BD5622169968600328E61 /* SampleURLs.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +172,7 @@
 				A87BD5532169928300328E61 /* ViewController.swift in Sources */,
 				A87BD5632169968600328E61 /* SampleURLs.swift in Sources */,
 				A87BD5512169928300328E61 /* AppDelegate.swift in Sources */,
+				A87BD56C2169AA6A00328E61 /* CassiniViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
